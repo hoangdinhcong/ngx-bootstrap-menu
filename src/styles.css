@@ -44,10 +44,16 @@
 }
 
 .nav-side-menu {
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
+.navbar-nav .open .dropdown-menu .dropdown-menu {
+  padding-left: 5px;
+}
 
 /* EXAMPLE 8 - Center Background */
 
