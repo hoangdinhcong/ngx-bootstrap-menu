@@ -110,7 +110,7 @@
 .user-panel {
   position: relative;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   overflow: hidden;
 }
 
@@ -145,7 +145,7 @@
 
 .sidebar-form {
   border-radius: 3px;
-  margin: 10px 10px;
+  margin: 10px 15px;
 }
 
 .sidebar-form,
