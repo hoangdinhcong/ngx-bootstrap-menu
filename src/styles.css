@@ -1,1 +1,155 @@
-/* You can add global styles to this file, and also import other style files */
+@media (min-width: 767px) {
+  .navbar-nav .dropdown-menu .caret {
+    transform: rotate(-90deg);
+  }
+  .nav-side-menu .user-panel,
+  .nav-side-menu .sidebar-form {
+    display: none;
+  }
+}
+
+
+/* EXAMPLE 8 - Center on mobile*/
+
+@media only screen and (max-width: 767px) {
+  .example-8 .navbar-brand {
+    padding: 0px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+  .example-8 button.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+  .example-8 .noti-nav {
+    float: right;
+    margin-right: 15px;
+  }
+  .nav-side-menu {
+    overflow: auto;
+    position: absolute;
+    top: 56px;
+    width: 300px;
+    bottom: 0;
+    left: -300px;
+    z-index: 999;
+    margin-bottom: 0;
+  }
+}
+
+.nav-side-menu.open {
+  left: 0;
+}
+
+.nav-side-menu {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+
+/* EXAMPLE 8 - Center Background */
+
+.example-8 .navbar-brand {
+  background: url(https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png) center / contain no-repeat;
+  width: 200px;
+}
+
+
+/* EXAMPLE 8 - Customize */
+
+.example-8.navbar {
+  margin-bottom: 0;
+}
+
+.noti-nav,
+.noti-nav li,
+.noti-nav li>a {
+  display: inline-block;
+}
+
+.noti {
+  position: relative;
+  font-size: 18px;
+}
+
+.noti[data-badge]:after {
+  content: attr(data-badge);
+  position: absolute;
+  top: 0px;
+  right: 3px;
+  font-size: 11px;
+  background-color: #ee464d;
+  color: white;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  line-height: 18px;
+  padding-left: 2px;
+}
+
+.noti.noti-red[data-badge]:after {
+  background-color: #ee464d;
+  border: 2px solid #681C1F;
+}
+
+.noti.noti-green[data-badge]:after {
+  background-color: #77c800;
+  border: 2px solid #487900;
+}
+
+
+/* - */
+
+.user-panel {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.user-panel {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.user-panel>.image>img {
+  width: 100%;
+  max-width: 45px;
+  height: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.user-panel>.info,
+.user-panel>.info>a {
+  color: #777;
+}
+
+.user-panel>.info {
+  padding: 5px 5px 5px 15px;
+  line-height: 1;
+  position: absolute;
+  left: 55px;
+}
+
+.user-panel>.info>a {
+  text-decoration: none;
+  padding-right: 5px;
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+.sidebar-form {
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+
+.sidebar-form,
+.sidebar-menu>li.header {
+  overflow: hidden;
+  text-overflow: clip;
+}
